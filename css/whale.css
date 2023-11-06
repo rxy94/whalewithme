@@ -104,7 +104,8 @@ footer {font-family: contenido;
 
 @media only screen and (width<700px) and (orientation:landscape) {
 
-    #hero {background-image: url(../img/backgroundlandscape.jpg);}
+    #hero {background-image: url(../img/backgroundlandscape.jpg);
+        color: #e9a980;}
 
-    #hero button {top:13%;}
+    #hero button {top:18%;}
 }
