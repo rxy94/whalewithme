@@ -1,0 +1,110 @@
+/***************************************************************************/
+/*                     Stylesheet for Whale with me                         */
+/*                     Author: Ruyi Xia Ye                                 */
+/*                     Version: 1.0                                        */
+/*                     Date: November 2023                                 */
+/*                     Comments: Lenguajes de Marcas project               */
+/***************************************************************************/
+
+@font-face {
+    font-family: title;
+    src: url(../font/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: contenido;
+    src: url(../font/SourceSans3-Regular.ttf);
+}
+
+* {box-sizing: border-box;}
+
+body {margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e9a980 0%, #7491b0 100%);
+    font-family: contenido;
+}
+
+#wrapper {background: rgb(48, 74, 105);
+    width:85%;
+    margin: auto;
+    color: white;
+}
+
+ul {list-style-type: none;
+    margin: 0%;
+    padding: 2%;
+}
+
+li {display: inline;
+}
+
+li a {color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+section {font-family: contenido;
+    font-size: 1.5em;
+    padding: 2%;
+}
+
+/******************************* HERO SECTION********************************/
+
+#hero {background-image: url(../img/heroimg.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: 66%;
+    position: relative;
+    font-family: title;
+    font-size: 3em;
+    color: white;
+    padding: 2%;
+}
+
+#hero button {background-color: rgb(48, 74, 105);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+    font-family: title;
+    font-size: 0.4em;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+/******************************** FOOTER ***********************************/
+
+footer {font-family: contenido;
+    font-size: 1.5em;
+    padding: 2%; 
+}
+
+/****************************** RESPONSIVE *********************************/
+
+@media only screen and (width<750px){
+
+    #wrapper {width:100%;}
+
+    #hero {background-image: url(../img/heroimg700px.jpg);
+        font-size:2em;}
+
+    #hero button {top:9%;
+        font-size: 0.5em;}
+
+    li a {font-size: 1.2em;
+        padding: 0px 5px;}
+
+    section {font-size: 1.2em;}
+
+    footer {font-size: 1.2em;}   
+}
+
+@media only screen and (width<750px) and (orientation:landscape) {
+
+    #hero {background-image: url(../img/hero700pxlandscape.jpg);}
+
+    #hero button {top:10%;}
+}
