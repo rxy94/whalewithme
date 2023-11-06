@@ -84,17 +84,17 @@ footer {font-family: contenido;
 
 /****************************** RESPONSIVE *********************************/
 
-@media only screen and (width<750px){
+@media only screen and (width<700px){
 
     #wrapper {width:100%;}
 
     #hero {background-image: url(../img/heroimg700px.jpg);
-        font-size:2em;}
+        font-size:1.8em;}
 
     #hero button {top:9%;
         font-size: 0.5em;}
 
-    li a {font-size: 1.2em;
+    li a {font-size: 1em;
         padding: 0px 5px;}
 
     section {font-size: 1.2em;}
@@ -102,9 +102,9 @@ footer {font-family: contenido;
     footer {font-size: 1.2em;}   
 }
 
-@media only screen and (width<750px) and (orientation:landscape) {
+@media only screen and (width<700px) and (orientation:landscape) {
 
-    #hero {background-image: url(../img/hero700pxlandscape.jpg);}
+    #hero {background-image: url(../img/backgroundlandscape.jpg);}
 
-    #hero button {top:10%;}
+    #hero button {top:13%;}
 }
