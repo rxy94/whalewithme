@@ -30,6 +30,13 @@ body {margin: 0;
     color: white;
 }
 
+section {font-family: contenido;
+    font-size: 1.5em;
+    padding: 2%;
+}
+
+/*************************** BARRA DE NAVEGACIÓN *****************************/
+
 ul {list-style-type: none;
     margin: 0%;
     padding: 2%;
@@ -45,12 +52,12 @@ li a {color: white;
     font-size: 1.5em;
 }
 
-section {font-family: contenido;
-    font-size: 1.5em;
+li a:hover{ background-color: #ed9965;
     padding: 2%;
+    border-radius: 10px;
 }
 
-/******************************* HERO SECTION********************************/
+/******************************* HERO SECTION *******************************/
 
 #hero {background-image: url(../img/heroimg.jpg);
     height: 95vh;
@@ -84,12 +91,12 @@ footer {font-family: contenido;
 
 /****************************** RESPONSIVE *********************************/
 
-@media only screen and (width<700px){
+@media only screen and (width<810px){
 
     #wrapper {width:100%;}
 
     #hero {background-image: url(../img/heroimg700px.jpg);
-        font-size:1.8em;}
+        font-size:2em;}
 
     #hero button {top:9%;
         font-size: 0.5em;}
@@ -102,11 +109,16 @@ footer {font-family: contenido;
     footer {font-size: 1.2em;}   
 }
 
-@media only screen and (width<700px) and (orientation:landscape) {
+@media only screen and (width<900px) and (orientation:landscape) {
 
+    #wrapper {width: 100%;}
     #hero {background-image: url(../img/backgroundlandscape.jpg);
-        color: #e9a980;
-        padding: 1%;}
+        color: #f09f6c;
+        padding: 1%;
+        font-size: 2em;}
 
-    #hero button {top:20%;}
+    #hero button {top:16%;
+        left:5%;
+        background-color: rgba(48, 74, 105, 0.648)
+    }
 }
