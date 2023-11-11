@@ -8,55 +8,46 @@
 
 @font-face {
     font-family: title;
-    src: url(../font/Oswald-Medium.ttf);
-}
+    src: url(../font/Oswald-Medium.ttf); }
 
 @font-face {
     font-family: contenido;
-    src: url(../font/SourceSans3-Regular.ttf);
-}
+    src: url(../font/SourceSans3-Regular.ttf); }
 
-* {box-sizing: border-box;}
+* {box-sizing: border-box; }
 
 body {margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #e9a980 0%, #7491b0 100%);
-    font-family: contenido;
-}
+    font-family: contenido; }
 
 #wrapper {background: rgb(48, 74, 105);
     width:85%;
     margin: auto;
-    color: white;
-}
+    color: white; }
 
 section {font-family: contenido;
     font-size: 1.5em;
     padding: 2%;
-    text-align: center;
-}
+    text-align: center; }
 
 /*************************** BARRA DE NAVEGACIÓN *****************************/
 
 ul {list-style-type: none;
     margin: 0%;
-    padding: 2%;
-}
+    padding: 2%; }
 
-li {display: inline;
-}
+li {display: inline; }
 
 li a {color: white;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
-    font-size: 1.5em;
-}
+    font-size: 1.5em; }
 
 li a:hover{ background-color: #ed9965;
     padding: 2%;
-    border-radius: 10px;
-}
+    border-radius: 10px; }
 
 /******************************* HERO SECTION *******************************/
 
@@ -69,8 +60,7 @@ li a:hover{ background-color: #ed9965;
     font-size: 3em;
     color: white;
     padding: 2%;
-    text-align: left;
-}
+    text-align: left; }
 
 #hero button {background-color: rgb(48, 74, 105);
     color: white;
@@ -81,52 +71,62 @@ li a:hover{ background-color: #ed9965;
     font-size: 0.4em;
     position: absolute;
     top: 15%;
-    left: 10%;
-}
+    left: 10%; }
 
 /******************************** FOOTER ***********************************/
 
 footer {font-family: contenido;
     font-size: 1.5em;
     padding: 2%; 
-    text-align: center;
-}
+    text-align: center; }
 
 /****************************** RESPONSIVE *********************************/
 
 @media only screen and (width<1000px){
-    #wrapper{width: 100%;}
+
+    #wrapper{width: 100%; }
+
 }
 
 @media only screen and (width<700px){
 
-    #wrapper {width:100%;}
+    #wrapper {width:100%; }
 
     #hero {background-image: url(../img/heroimg700px.jpg);
         font-size:1.8em;
-        color:  #f09f6c;}
+        color:  #f09f6c;
+        text-align: left; }
 
     #hero button {top:9%;
-        font-size: 0.5em;}
+        font-size: 0.5em; }
 
     li a {font-size: 1em;
-        padding: 0px 5px;}
+        padding: 0px 5px; }
 
-    section {font-size: 1.2em;}
+    section {font-size: 1.2em;
+        text-align: center; }
 
-    footer {font-size: 1.2em;}   
+    footer {font-size: 1.2em;
+        text-align: center; }
+
 }
 
 @media only screen and (width<700px) and (orientation:landscape) {
 
-    #wrapper {width: 100%;}
+    #wrapper {width: 100%; }
+
     #hero {background-image: url(../img/backgroundlandscape.jpg);
         color: #f09f6c;
         padding: 1%;
-        font-size: 2em;}
+        font-size: 2em;
+        text-align: left; }
 
     #hero button {top:20%;
         left:5%;
-        background-color: rgba(48, 74, 105, 0.648)
-    }
+        background-color: rgba(48, 74, 105, 0.648); }
+
+    section {text-align: center; }
+
+    footer {text-align: center; }
+    
 }
