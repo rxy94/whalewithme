@@ -33,6 +33,7 @@ body {margin: 0;
 section {font-family: contenido;
     font-size: 1.5em;
     padding: 2%;
+    text-align: center;
 }
 
 /*************************** BARRA DE NAVEGACIÓN *****************************/
@@ -68,6 +69,7 @@ li a:hover{ background-color: #ed9965;
     font-size: 3em;
     color: white;
     padding: 2%;
+    text-align: left;
 }
 
 #hero button {background-color: rgb(48, 74, 105);
@@ -87,6 +89,7 @@ li a:hover{ background-color: #ed9965;
 footer {font-family: contenido;
     font-size: 1.5em;
     padding: 2%; 
+    text-align: center;
 }
 
 /****************************** RESPONSIVE *********************************/
@@ -101,7 +104,7 @@ footer {font-family: contenido;
 
     #hero {background-image: url(../img/heroimg700px.jpg);
         font-size:1.8em;
-        color: #f09f6c;}
+        color:  #f09f6c;}
 
     #hero button {top:9%;
         font-size: 0.5em;}
