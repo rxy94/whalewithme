@@ -1,132 +1,465 @@
 /***************************************************************************/
-/*                     Stylesheet for Whale with me                         */
+/*                     Stylesheet for Whale with me                        */
 /*                     Author: Ruyi Xia Ye                                 */
 /*                     Version: 1.0                                        */
 /*                     Date: November 2023                                 */
 /*                     Comments: Lenguajes de Marcas project               */
 /***************************************************************************/
 
+
+/**************************************** EXTERNAL FONT LINKS ***************************************/
 @font-face {
     font-family: title;
-    src: url(../font/Oswald-Medium.ttf); }
+    src: url(../font/Oswald-Medium.ttf);}
 
 @font-face {
     font-family: contenido;
-    src: url(../font/SourceSans3-Regular.ttf); }
+    src: url(../font/SourceSans3-Regular.ttf);}
 
-* {box-sizing: border-box; }
+/**************************************** MOBILE FIRST DESIGN ***************************************/
+/********************                           General                              ****************/
+* {box-sizing: border-box;}
 
 body {margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e9a980 0%, #7491b0 100%);
-    font-family: contenido; }
+    background: rgb(48, 74, 105);
+    font-family: contenido;}
 
 #wrapper {background: rgb(48, 74, 105);
-    width:85%;
+    width:100%;
     margin: auto;
-    color: white; }
+    color: white;}
 
 section {font-family: contenido;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 2%;
-    text-align: center; }
+    text-align: center;}
 
-/*************************** BARRA DE NAVEGACIÓN *****************************/
+h1 {font-size: 1.2em;}
 
-ul {list-style-type: none;
-    margin: 0%;
-    padding: 2%; }
+p {font-size: 0.8em;
+    text-align: justify;
+}
 
-li {display: inline; }
+.button {background-color:  rgb(43, 77, 117);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: contenido;
+    font-size: 0.8em;}
 
-li a {color: white;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-    font-size: 1.5em; }
+.button:hover {background-color: rgb(88, 135, 189);}
 
-li a:hover{ background-color: #ed9965;
-    padding: 2%;
-    border-radius: 10px; }
+.fa-arrow-circle-up {position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+    font-size: 2em !important;}
 
-/******************************* HERO SECTION *******************************/
+a .fa-arrow-circle-up {color:  rgb(126, 168, 218);
+    overflow: hidden;}
 
-#hero {background-image: url(../img/heroimg.jpg);
+.fa-bars {color: white;}
+
+/****************************************** HERO SECTION ********************************************/
+
+#hero {background-image: url(../img/heroimg700px.jpg);
     height: 95vh;
     background-size: cover;
     background-position: 66%;
     position: relative;
     font-family: title;
-    font-size: 3em;
-    color: white;
+    font-size:1.9em;
+    color:  #f09f6c;
     padding: 2%;
-    text-align: left; }
+    text-align: left;}
 
-#hero button {background-color: rgb(48, 74, 105);
+#hero button {background-color:rgb(48, 74, 105);
     color: white;
     padding: 8px 13px;
     border: none;
     border-radius: 10px;
     font-family: title;
-    font-size: 0.4em;
+    font-size: 0.5em;
     position: absolute;
-    top: 15%;
-    left: 10%; }
+    top:9%; 
+    left: 10%;}
 
-/******************************** FOOTER ***********************************/
+#hero button:hover {background-color: #f39b64d7;}
 
-footer {font-family: contenido;
-    font-size: 1.5em;
-    padding: 2%; 
-    text-align: center; }
 
-/****************************** RESPONSIVE *********************************/
+/********************************************* NAVBAR **********************************************/
+nav {position: sticky;
+    top:0; 
+    z-index: 99;
+    opacity: 0.8;}
 
-@media only screen and (width<1000px){
+.topnav {background-color: rgb(27, 44, 65);
+    overflow: hidden;}
 
-    #wrapper{width: 100%; }
+.topnav a {float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    font-size: 1.2em;}
+
+.topnav a:hover {background-color: rgb(48, 74, 105);
+    color: white;}
+
+.topnav .icon {display: none;}
+
+/************************************** INTRO SECTION (GRID-2) *************************************/
+.grid-2 {display: grid;
+    grid-template-columns: 100%;}
+
+.col-2 {padding: 2%;}
+
+#intro .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%; 
+}
+
+#intro .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#intro {padding: 5%;}
+
+/************************************** CONTENT SECTION (GRID-4) ***********************************/
+.grid-4 {display: grid;
+    grid-template-columns: 100%;}
+
+.col-4 {padding-bottom: 8%;}
+
+#content {background-color: #f1b48e;
+padding: 5%;}
+
+.content {font-size: 0.8em;
+    text-align: justify;}
+
+/**************************        CONTENT: Card Style in Grid-4        ****************************/
+.card img {width: 100%;}
+
+.card {border: 1px solid #f09f6c;
+    background-color:white;
+    color: rgb(43, 77, 117);
+    border-radius: 10px;
+    padding: 4%;}
+
+.card:hover {box-shadow: 3px 3px 5px rgb(43, 77, 117);}
+
+/*************************************** RESOURCES SECTION (GRID-4D) ******************************/
+#resources {padding: 5%;}
+.grid-4d {display: grid;
+    grid-template-columns: 100%;}
+
+.col-4d {padding-bottom: 8%;}
+
+.learnmorelinks {text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color:  rgb(43, 77, 117);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: contenido;
+    font-size: 0.8em;}
+
+/****************************          RESOURCES: Card Style in Grid-4d        ********************/
+.card2 img {width: 100%;}
+
+.card2 {border: 1px solid rgb(27, 44, 65);
+    background-color:white;
+    color: rgb(43, 77, 117);
+    border-radius: 10px;
+    padding: 4%;}
+
+.card2:hover {box-shadow: 3px 3px 5px #f1b48e;}
+
+/*********************************************  GALLERY  ******************************************/
+
+#gallery{background-color: #e9a980;}
+
+/************************************** FOOTER (GRID-2D) ******************************************/
+.grid-2d {display: grid;
+    grid-template-columns: 100%;}
+
+footer {background-color:rgb(27, 44, 65);
+    color: white;
+    font-family: contenido;
+    font-size: 1.2em;
+    text-align: center; 
+    padding: 2%;}
+
+h3 {font-size: 1em;
+    font-weight: none;}
+
+.footerlinks a {text-decoration: none;
+    color: #efc6ac;
+    font-size: 1em;}
+
+.footericons {padding: 1%;
+    font-size: 1.4em;}
+
+.fa {color: #efc6ac;}
+
+.grid-2d {display: grid;
+    grid-template-columns: 100%;}
+
+#email{text-decoration: none;
+    font-size: 1em;
+    color: #efc6ac;}
+
+#footerbutton {background-color:  white;
+    color: rgb(43, 77, 117);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: contenido;
+    font-size: 0.8em;
+    font-weight: bold;}
+
+#footerbutton:hover {background-color: #f09f6c;
+                color: white;}
+
+footer .fa {margin: 10px 10px;}
+
+footer .fa:hover {color: white;}
+
+footer a {text-decoration: none;}
+
+footer a p {color: #efc6ac;
+    font-size: 1em;
+    border: hidden;
+    padding-left: 10px;
+    transition: 0.2s;}
+
+footer a p:hover {color: white;
+    border-left: 4px solid #f09f6c;}
+
+
+/**************************************** CREDITS *************************************************/
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 9%; 
+    top: 8%;
+    width: 80%; 
+    height: 80%; 
+    overflow: auto; 
+    background-color: rgb(27, 44, 65);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {background-color: #efc6ac;
+    color: rgb(27, 44, 65);
+    margin: 15% auto; 
+    padding: 20px;
+    border: none;
+    width: 100%; }
+
+.close {color: rgb(27, 44, 65);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;}
+
+.close:hover,
+.close:focus {color: black;
+    text-decoration: none;
+    cursor: pointer;}
+
+#myBtn {cursor: pointer;}
+
+/*************************************** RESPONSIVE DESIGN ************************************************/
+
+/*******************************         RESPONSIVE: TopNav         ******************************/
+@media screen and (max-width:900px) {
+    .topnav a:not(:first-child) {display: none;} 
+    .topnav a.icon {float: right;
+        display: block;}
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {position: absolute;
+        right: 0;
+        top: 0;}
+    .topnav.responsive a {float: none;
+        display: block;
+        text-align: left;}
+}
+
+@media screen and (max-width: 800px) and (orientation:landscape) {
+    #hero {background-image: url(../img/backgroundlandscape.jpg);}
+    #hero button {top: 5%;
+        left: 45%;
+        font-size: 0.5em;
+    }
+
+    .topnav.responsive {position: relative;}
+
+    .topnav.responsive a.icon {position: absolute;
+        right: 0;
+        top: 0;}
+
+    .topnav.responsive a {float: none;
+        display: block;
+        text-align: left;}
+}
+
+/******************************        RESPONSIVE: on Computer        *****************************/
+
+@media only screen and (width>900px) {
+
+    body {background: linear-gradient(to bottom, #e9a980 0%, #7491b0 100%);}
+
+    .sectiontitle {font-size: 2.8em;}
+
+    h3 {font-size: 1.5em;
+        font-weight: none;
+        text-align: justify;}
+
+    p {font-size: 1em;}
+
+    .fa-arrow-circle-up {font-size: 2.5em !important;}
+
+    #card3 {font-size: 1.322em;
+        text-align: left;}
+
+/******************                  GRIDS and COLS on Computer                   ***************/
+
+    .grid-2 {grid-template-columns: 50% 50%;}
+
+    .col-2 {padding: 5%;}
+
+    .grid-2d {grid-template-columns: 50% 50%;}
+
+    .grid-4 {grid-template-columns: 25% 25% 25% 25%;}
+
+    .col-4 {padding: 5%;}
+
+    .grid-4d {grid-template-columns: auto auto auto auto;}
+
+    .col-4d {padding: 5%;}
+
+/******************                         NAV on Computer                         **************/
+
+    .topnav {background-color: rgb(28, 57, 90);
+        overflow: hidden;}
+
+    .topnav a:hover {background-color: #f09f6c;}
+
+    .topnav a {
+        padding: 20px 22px; 
+        font-size: 1.8em;}
+        
+/******************                HERO SECTION on Computer                         **************/
+
+    #hero {background-image: url(../img/heroimg.jpg);
+        font-size: 3em;
+        color: white;
+        padding: 2%;
+        text-align: left;}
+
+    #hero button {font-size: 0.4em;
+        top: 15%;
+        left: 10%;}
+
+    #hero button:hover {background-color: rgba(82, 139, 208, 0.897);}
+
+/******************                  INTRO SECTION on Computer                    **************/
+
+    .container {width: 100%;}
+
+    #intro .container {position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        top: 10%;}
+
+    #intro .responsive-iframe {position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;}
+
+/******************                     FOOTER on Computer                       **************/
+
+    footer {font-size: 1.5em;}
+
+    footer a p {font-size: 1.3em;}
+
+    .footericons {font-size: 1.5em;
+        text-align: left;}
+
+    #footerbutton {background-color:  #f09f6c;
+        color: white;
+        font-size: 1em;}
+
+    #footerbutton:hover {background-color: rgb(88, 135, 189);}
+
+/*************************         CREDITS(Footer) on Computer          **********************/
+
+    .modal {top: 0; 
+        height: 100%; 
+        overflow: auto;}
 
 }
 
-@media only screen and (width<700px){
+/******************************         RESPONSIVE: on Tablet         *****************************/
 
-    #wrapper {width:100%; }
+@media only screen and (max-width: 900px) and (width > 800px) {
 
-    #hero {background-image: url(../img/heroimg700px.jpg);
-        font-size:1.8em;
-        color:  #f09f6c;
-        text-align: left; }
-
-    #hero button {top:9%;
-        font-size: 0.5em; }
-
-    li a {font-size: 1em;
-        padding: 0px 5px; }
-
-    section {font-size: 1.2em;
-        text-align: center; }
-
-    footer {font-size: 1.2em;
-        text-align: center; }
-
-}
-
-@media only screen and (width<700px) and (orientation:landscape) {
-
-    #wrapper {width: 100%; }
-
-    #hero {background-image: url(../img/backgroundlandscape.jpg);
-        color: #f09f6c;
-        padding: 1%;
-        font-size: 2em;
-        text-align: left; }
-
-    #hero button {top:20%;
-        left:5%;
-        background-color: rgba(48, 74, 105, 0.648); }
-
-    section {text-align: center; }
-
-    footer {text-align: center; }
     
+    #hero {background-image: url(../img/heroimg.jpg);
+        font-size: 3em;
+        color: white;
+        padding: 2%;
+        text-align: left;}
+
+    #hero button {font-size: 0.4em;
+        top: 15%;
+        left: 10%;}
+
+    #hero button:hover {background-color: rgba(82, 139, 208, 0.897);}
+
+}
+
+@media only screen and (max-width: 1024px) and (width>900px) and (orientation: landscape) {
+
+    
+    #hero {background-image: url(../img/heroimg.jpg);
+        font-size: 3em;
+        color: white;
+        padding: 2%;
+        text-align: left;}
+
+    #hero button {font-size: 0.4em;
+        top: 15%;
+        left: 10%;}
+
+    #hero button:hover {background-color: rgba(82, 139, 208, 0.897);}
+
+    #intro .container {top: 30%;}
+
+    #card2 {font-size: 1.25em;}
+    #card2p {text-align: left;}
+    #card3 {font-size: 1.31em;
+        text-align: left;}
+        
 }

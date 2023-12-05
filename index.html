@@ -6,29 +6,195 @@
     <title>Whale with me - blue whale</title>
     <link rel="stylesheet" href="./css/whale.css">
     <link rel="shortcut icon" href="./img/ballenafavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="#intro">Introduction</a>
+            <a href="#content">Content</a>
+            <a href="#resources">Resources</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#email">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <a href="">
+        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+    </a>
+
+<!--------------------------------------       HERO SECTION      ------------------------------------------->
+    <section id="hero">
+        Are you ready to WHALE?
+        <a href="#intro"><button>Let's Whale!</button></a>
+    </section>
+
+<!-----------------------------------------       WRAPPER      --------------------------------------------->
     <div id = "wrapper">
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Gallery">Gallery</a></li>
-                <li><a href="#Forum">Forum</a></li>
-                
-            </ul>
-        </nav>
-        <section id="hero">
-            Are you ready to WHALE?
-            <button>Let's Whale!</button>
+
+    <!----------------------------        INTRO dentro del wrapper       -------------------------------->
+        <section id="intro">
+            <div class="grid-2">
+                <div class="col-2">
+                    <h1 class="sectiontitle">Introduction</h1>
+                    <p>Blue whales are the largest animals ever known to have lived on Earth. These magnificent marine mammals rule the oceans at up to 100 feet long and upwards of 200 tons. Their tongues alone can weigh as much as an elephant. Their hearts, as much as an automobile.</p>
+                </div>
+
+                <div class="col-2">
+                    <div class="container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/bgiPTUy2RqI?si=cvd-MWXmwtuQbiy_&amp;start=764" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <section>Introduction</section>
-        <section>Origins</section>
-        <section>About the Species</section>
-        <section>Gallery</section>
-        <section>Resources</section>
-        <footer>Footer</footer>
+
+    <!--------------------------------  CONTENT SECTION dentro del wrapper    -------------------------->
+        <section id="content">
+            <h1 class="sectiontitle">Content</h1>
+            <div class="grid-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./img/whaleappearance.jpg" alt="bluewhaleappearence">
+                        <h3>Appearance</h3>
+                        <p class="content">Blue whales look true blue underwater, but on the surface their coloring is more a mottled blue-gray.</p>
+                        <button class="button">Read more</button>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./img/articfoodchain.jpg">
+                        <h3 id="card2">Diet</h3>
+                        <p id="card2p" class="content">Blue whales' diet is composed nearly exclusively of tiny shrimplike animals called krill.</p>
+                        <button class="button">Read more</button>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./img/whalereproduction.jpg">
+                        <h3 id="card3">Reproduction & Lifespan</h3>
+                        <p class="content">Female blue whales can give birth every two to three years.</p>
+                        <button class="button">Read more</button>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./img/whaleconservation.jpg">
+                        <h3>Conservation</h3>
+                        <p class="content">Aggressive hunting in the 1900s by whalers seeking whale oil drove them to the brink of extinction.</p>
+                        <button class="button">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        
+    <!--------------------------------  RESOURCES SECTION dentro del wrapper    ------------------------>
+        <section id="resources">
+            <h1 class="sectiontitle">Resources</h1>
+            <div class="grid-4d">
+                <div class="col-4d">
+                    <div class="card2">
+                        <img src="./img/wwf_logo_750_x_600.jpg">
+                        <h3> </h3>
+                        <a class="learnmorelinks" href="https://www.wwf.es/" target="_blank">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-4d">
+                    <div class="card2">
+                        <img src="./img/nationalgeographic.png">
+                        <h3> </h3>
+                        <a class="learnmorelinks" href="https://www.nationalgeographic.com.es/" target="_blank">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-4d">
+                    <div class="card2">
+                        <img src="./img/oceanalogo.png">
+                        <h3> </h3>
+                        <a class="learnmorelinks" href="https://oceana.org/marine-life/blue-whale/" target="_blank">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-4d">
+                    <div class="card2">
+                        <img src="./img/greenpeacelogo.png">
+                        <h3> </h3>
+                        <a class="learnmorelinks" href="https://es.greenpeace.org/es/" target="_blank">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+    <!--------------------------------  GALLERY SECTION dentro del wrapper    -------------------------->
+        </section>
+        <section id="gallery">
+            <h1 class="sectiontitle">Gallery</h1>
+        </section>
+        
     </div>
+
+<!----------------------------------------- FOOTER ------------------------------------------------------------->
+    <footer>
+
+        <div class="grid-2d">
+
+            <div class="col-2">
+
+                <h3>Whale with me © 2023</h3>
+
+                <a href="#"><p>Home<br></p></a>
+                <a href="#intro"><p>Introduction<br></p></a>
+                <a href="#content"><p>Content<br></p></a>
+                <a href="#resources"><p>Resources<br></p></a>
+                <a href="#gallery"><p>Gallery</p></a>
+
+            </div>
+
+            <div class="col-2">
+
+                <h3>Contact Us<br></h3>
+                <p><a id="email" href="mailto:whalewithme@gmail.com" target="_blank">whalewithme@gmail.com</a></p>
+                <p><button id="footerbutton">Donate</button></p>
+
+                <h3>Follow Us</h3>
+                <div class="footericons" id="myfootericons">
+                    <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://es.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+
+                <h3 id="myBtn">Credits</h3>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>- Freepik</p>
+                        <p>- National Geographic</p>
+                        <p>- Oceana.org</p>
+                        <p>- WWF</p>
+                        <p>- Greenpeace</p>
+                        <p>- W3Schools</p>
+                        <p>- CodePen</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/whale.js"></script>
+
 </body>
 </html>
