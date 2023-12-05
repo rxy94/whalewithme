@@ -304,8 +304,8 @@ footer a p:hover {color: white;
 
 @media screen and (max-width: 800px) and (orientation:landscape) {
     #hero {background-image: url(../img/backgroundlandscape.jpg);}
-    #hero button {top: 5%;
-        left: 45%;
+    #hero button {top: 25%;
+        left: 5%;
         font-size: 0.5em;
     }
 
