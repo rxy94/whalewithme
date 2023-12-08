@@ -177,6 +177,8 @@ padding: 5%;}
     font-family: contenido;
     font-size: 0.8em;}
 
+.learnmorelinks:hover {background-color: #f1b48e;}
+
 /****************************          RESOURCES: Card Style in Grid-4d        ********************/
 .card2 img {width: 100%;}
 
