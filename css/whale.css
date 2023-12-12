@@ -342,6 +342,9 @@ footer a p:hover {color: white;
 
 #myBtn {cursor: pointer;}
 
+li {text-align: left;
+    font-size: 0.8em;}
+
 /*************************************** RESPONSIVE DESIGN ************************************************/
 
 /*******************************         RESPONSIVE: TopNav         ******************************/
@@ -479,6 +482,7 @@ footer a p:hover {color: white;
         overflow: auto;}
 
 }
+
 
 /******************************         RESPONSIVE: on Tablet         *****************************/
 
