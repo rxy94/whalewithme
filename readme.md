@@ -38,7 +38,7 @@ Luego lo he enlazado con la sección Introduction</p>
 <h3>Introduction</h3>
 <img src=" " alt="imagen de Introduction section" style="width:50%">
 <p>Lo he dispuesto en un grid de 2 columnas: </p>
-<p>En la primera columna introduzco un párrafo de texto a modo introductorio al mundo de las ballenas azules</p>
+<p>En la primera columna introduzco un párrafo de texto a modo introductorio al mundo de las ballenas azules.</p>
 <p>En la segunda columna introduzco un vídeo de National Geographic sacado de Youtube a través de un link.</p>
 
 <h3>Content</h3>
@@ -77,19 +77,31 @@ Luego lo he enlazado con la sección Introduction</p>
 
 <h2 id="estilo">Estilo de la página</h2>
 <h3>Paleta de colores</h3>
-<p>.....</p>
+<img src=" " alt="paleta de colores usada" style="width:50%">
 <h3>Tipografías</h3>
-<p>.....</p>
-<h3>Imágenes</h3>
-<p>.....</p>
+<ul>
+  <li>Oswald regular</li>  
+  <li>SourceSans3 regular</li>
+</ul>
+<h3>Imágenes (Fuentes):</h3>
+<ul>
+  <li>Freepik</li>  
+  <li>Unsplash</li>
+  <li>Oceanaadventures.co.za</li>
+  <li>Wallpapers.com</li>
+  <li>National Geographic (logo only)</li>
+  <li>WWF(logo only)</li>
+  <li>Greenpeace (logo only)</li>
+  <li>Oceana.org (logo only)</li>
+</ul>
 <h3>Videos</h3>
-<p>.....</p>
+<p>Intro video from Youtube - National Geographic</p>
 ...................
 <h2 id="snippets">Code snippets</h2>
 <p>He utilizado los siguientes:</p>
 <ul>
-  <li>Barra de navegación: tomada de w3Schools "How to" (poner vínculo)</li>
-  <li>Accordion: ..............</li>
-  <li>..........</li>
+  <li>Barra de navegación: tomada de W3Schools "How to" <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp" target="_blank">link</a></li>
+  <li>Galería: tomada de W3Schools "How to" <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp" target="_blank">link</a></li>
+  <li>Modal box for Credits: tomada de W3Schools "How to" <a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">link</a></li>
 </ul>
 
