@@ -85,8 +85,7 @@ He utilizado los siguientes fragmentos de código de W3Schools:
 
 ## Dónde visitar la página
 Puedes ver el proyecto en funcionamiento en:  
-🔗 [Enlace al sitio web desplegado](https://rxy94.github.io/whalewithme/)  
-_(Reemplaza este enlace por el correcto si es otro)_
+🔗 [Enlace al sitio web desplegado](https://rxy94.github.io/whalewithme/)
 
 ## Créditos
 Este proyecto ha sido realizado íntegramente por **Ruyi Xia Ye** como parte del módulo de **Lenguajes de Marcas** en 1º DAW.  
